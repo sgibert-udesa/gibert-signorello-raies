@@ -13,6 +13,40 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-.PRODUCTS{
-    
+body{width: 1024px;
+    justify-items: center;
+    display: block;
 }
+.logo_index  {width: 1024px;}
+.navegador_index {display: flex;
+justify-content: space-around;}
+.PRODUCTS{ display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+.main_index{display: flex;
+flex-direction: row;
+flex-wrap: wrap;}
+.aside_index {
+
+}
+.TOP_PRODUCTS{ text-align: center;
+display: block;
+width: 100%;}
+
+.section_index{display: flex;
+flex-wrap: wrap;
+width: 800px;
+
+}
+.article_index {display: flex;
+flex-wrap: wrap;
+width: 200px;
+border: 1px gray solid;
+
+}
+
+.img_article_index{width: 200px;
+min-height: 199.99px;}
