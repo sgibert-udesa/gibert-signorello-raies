@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="./css/styles.css">
-     <header><div class="logo">
-        <a href="index.html">
-            <img src="./img/logopagina.jpg" alt="logo">
-        </a>
-    </div></header>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-     <section class="contenedor">
 
-        <form action="">
-            <label for="">EMAIL<input type="email" required></label>
-            <label for="">CONTRASEÑA<input type="password" required></label>
-         </form>
+<body class="body_login">
+    <header class="header_index">
+        <nav>
+            <ul class="navegador_index">
+                <li> <a href="./login.html">Login</a> </li>
+                <li> <a href="./register.html">Register</a></li>
+            </ul>
+        </nav>
+        <div class="logo_index">
+            <a href="./index.html"> <img src="./img/logopagina.jpg" alt="" class="logo_index"></a>
+        </div>
 
+        <nav class="navegador_index0">
+            <form action="" class="BARRA_de_busqueda">
+                <label for="" class="BARRA_de_busqueda1"><input type="text" class="buscador_index"
+                        placeholder="BUSCA TUS PRODUSCTOS"></label>
+                <button class="BARRA_de_busqueda2" input type="submit" name="BUSCAR">BUSCAR</button>
+            </form>
+        </nav>
+    </header>
+<main class="main_login">
+    <section class="contenedor_login">
+        <h1 class="titulo_login">Login</h1>
+        <form action="" class="form_login">
+            <label for=""><div>EMAIL</div><input type="email" required class="email_login"></label>
+            <label for=""><div>CONTRASEÑA</div><input type="password" required class="email_login"></label>
+        </form>
     </section>
+</main>
 </body>
+
 </html>

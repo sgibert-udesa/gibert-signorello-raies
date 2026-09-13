@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<header>
-    <div class="logo_index">
-             <img src="./img/logopagina.jpg" alt="" class="logo_index">
-        </div>
-        
-        <nav class="navegador_index0">
+
+<body class="body_login">
+    <header class="header_index">
+        <nav>
             <ul class="navegador_index">
-                <li > <a href="./login.html">login</a> </li>
-                <li > <a href="./register.html">register</a> </li>
+                <li> <a href="./login.html">Login</a> </li>
+                <li> <a href="./register.html">Register</a></li>
             </ul>
-            <form action="" class="BARRA_de_busqueda">
-                <label for="" class="BARRA_de_busqueda1"><input type="text" class="buscador_index" placeholder="BUSCA TUS PRODUSCTOS" ></label>
-                 <button class="BARRA_de_busqueda2" input type="submit" name="BUSCAR">BUSCAR</button>
-            </form>
-            
         </nav>
-</header>
-<body>
-     <section">
+        <div class="logo_index">
+            <a href="./index.html"> <img src="./img/logopagina.jpg" alt="" class="logo_index"></a>
+        </div>
 
-        <form action="">
-            <label for="">EMAIL<input type="email" required></label>
-            <label for="">CONTRASEÑA<input type="password" required></label>
-         </form>
+        <nav class="navegador_index0">
+            <form action="" class="BARRA_de_busqueda">
+                <label for="" class="BARRA_de_busqueda1"><input type="text" class="buscador_index"
+                        placeholder="BUSCA TUS PRODUSCTOS"></label>
+                <button class="BARRA_de_busqueda2" input type="submit" name="BUSCAR">BUSCAR</button>
+            </form>
 
-    </section>
+        </nav>
+    </header>
+    <main class="main_login">
+        <section class="contenedor_login">
+            <h1 class="titulo_login">Registrate</h1>
+            <form action="" class="form_login">
+                <label for="">
+                    <div class="escrito">NOMBRE</div><input type="text" required minlength="4"
+                        placeholder="Ingresa tu nombre" class="email_login">
+                </label>
+                <label for="">
+                    <div class="escrito">EMAIL</div><input type="email" required minlength="8"
+                        placeholder="Ingresa tu email" class="email_login">
+                </label>
+                <label for="">
+                    <div class="escrito">CONTRASEÑA</div><input type="password" required minlength="6"
+                        placeholder="password" class="email_login">
+                </label>
+                 <label for="">
+                    <div class="escrito">FECHA DE NACIMIENTO</div><input type="date" required minlength="6"
+                        placeholder="password" class="email_login">
+                </label>
+
+                <label for="">
+                    <div class="escrito negrita01"> GENERO</div><input type="radio" name="genero" value="F">FEMENINO
+                    <input type="radio" name="genero" value="M">MASCULINO
+                    <input type="radio" name="genero" value="N">OTRO
+                </label>
+                <label for=""><input type="checkbox" class="terminos"> <span>ACEPTO LOS TERMINOS Y CONDICIONES</span></label>
+                <label for="" class="Registrate"><button type="submit" class="boton">Registrate</button><button
+                        class="boton" type="reset">Cancelar</button></label>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>

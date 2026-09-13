@@ -49,7 +49,7 @@ body {
 }
 
 .logo_index {
-    width: 380px;
+    width: 400px;
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -57,15 +57,17 @@ body {
 
 .navegador_index {
     display: flex;
-
-    width: 100px;
+    width: 1000px;
     gap: 10px;
-
+    justify-content: end;
+    height: 30px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+align-content: center;
 }
 
 .navegador_index0 {
     display: flex;
-    flex-direction: row-reverse;
     flex-wrap: wrap;
     width: 1024px;
     margin-bottom: 10px;
@@ -165,6 +167,7 @@ body {
 .img_article_index {
     width: 192.5px;
     height: 200px;
+        margin-bottom: 5px;
 }
 
 .imgproduct {
@@ -263,6 +266,39 @@ body {
 }
 .descripcion {
     font-size: 20px;
+}
+.email_login {
+width: 400px;
+}
+.main_login {
+    background-color: #6c5b7b;
+    width: 768px;
+    display: flex;
+    justify-content: center;
+}
+.body_login {
+     justify-content: center;
+}
+.contenedor_login {
+    margin: 15px 0 15px 0;
+}
+.titulo_login{
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+.form_login {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.texto_productos {
+    margin: 0 10px  10px;
+    width: 172.5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
 }
 
 
