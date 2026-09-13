@@ -35,7 +35,7 @@ body {
     flex-wrap: wrap;
     justify-self: center;
 
-    background-color: rgb(246, 114, 128);
+    background-color: rgb(235, 234, 233);
 }
 
 
@@ -89,7 +89,7 @@ align-content: center;
 .BARRA_de_busqueda2 {
     width: 80px;
     height: 30px;
-    background-color: rgb(246, 114, 128);
+    background-color: rgb(248, 177, 149);
     border: 1px solid black;
 }
 
@@ -103,7 +103,7 @@ align-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #6c5b7b;
+    background-color: rgb(108, 91, 123);
 }
 
 .main_index {
@@ -117,7 +117,7 @@ align-content: center;
 
 .aside_index {
     width: 200px;
-    background-color: #cd6c84;
+    background-color: rgb(235, 200, 200);
 }
 
 .CATEGORIAS_index {
@@ -181,15 +181,15 @@ align-content: center;
     height: 40px;
     align-self: end;
     width: 100px;
-    background-color: rgb(246, 114, 128);
+    background-color: rgb(248, 177, 149);
     border: 1px solid black;
 }
 
 .item {
-    border: 2px solid black;
+    border: 2px solid rgb(53, 92, 125);
     display: flex;
     flex-direction: column;
-    background-color: rgb(248, 177, 149);
+    background-color: rgb(224, 218, 216);
     padding: 10px;
 }
 
