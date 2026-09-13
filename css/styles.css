@@ -78,8 +78,7 @@ body {
     width: 1024px;
     
 }
-
-.aside_index {
+aside {
 width: 204px;
 }
 .CATEGORIAS_index { 
@@ -161,3 +160,7 @@ width: 100px;
 .h1product {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+aside {
+    background-color: bisque;
+}
+
