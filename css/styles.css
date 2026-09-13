@@ -171,7 +171,6 @@ body {
     height: 500px;
     width: 500px;
     border: 5px solid rgb(192, 108, 132);
-    margin-left: 70px;
 }
 
 .botton_index {
@@ -184,10 +183,10 @@ body {
 }
 
 .item {
-    border: 2px solid rgb(53, 92, 125);
-    width: 800px;
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
+    background-color: rgb(248, 177, 149);
 }
 
 .Section {
@@ -197,7 +196,9 @@ body {
 .Section2 {
     margin-bottom: 30px;
 }
-
+.Reseñas {
+    margin-bottom: 20px;
+}
 .item {
     line-height: 25px;
 }
@@ -205,7 +206,12 @@ body {
 .h1product {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-aside {
-    background-color: bisque;
+.precio {
+    background-color: #355c7d;
+    color: white;
+}
+.divimg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
