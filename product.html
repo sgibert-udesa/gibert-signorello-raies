@@ -7,12 +7,12 @@
      <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-        <a href="index.html">
-            <a href="./index.html"> <img src="./img/logopagina.jpg" alt="" class="logo_index"></a>
-        </a>
-    </div>
+    <header class="header_index" >
+        <div class="logo_index">
+           <a href="index.html">
+          <a href="./index.html"> <img src="./img/logopagina.jpg" alt="" class="logo_index"></a>
+           </a>
+       </div>
         <nav class="navegador_index0">
             <ul class="navegador_index" >
                 <li> <a href="./login.html">login</a> </li>
@@ -24,12 +24,12 @@
             </form>
         </nav>
     </header>
-    <main>
+    <main class="mainproduct">
         <aside class="aside_index">
-            <h2>CATEGORIAS</h2>
+            <h1 class="CATEGORIAS_titulo">CATEGORIAS</h1>
             <nav>
-                <ul>
-                    <li><a href="./category.html">Beauty</a></li>
+                <ul class="CATEGORIAS_index" >
+                    <li class="CATEGORIAS_index_li" ><a href="./category.html">Beauty</a></li>
                     <li><a href="./category.html">Fragnances</a></li>
                     <li><a href="./category.html">Furniture</a></li>
                     <li><a href="./category.html">Groceries </a></li>
@@ -56,38 +56,40 @@
                 </ul>
             </nav>
         </aside>
-    <section class="Section product">
-    <div class="divimg"><img src="./img/airpods pro.jpeg" alt="Imagen AirPods" class="imgproduct"></div>
-    <h1 class="h1product">Airpods Pro segunda generacion</h1>
-    <p>Auriculares inalámbricos diseñados para ofrecer una cancelación de ruido superior, con funciones de salud auditiva y sensores tactiles</p>
-    <p class="precio">$199.99</p>
-    <p> Apple</p>
-    </section>
-    <h2 class="Reseñas">Reseñas:</h2>
-    <section class="Section item">
-        <article>
-            <h2>Juana Rodriguez</h2>
-            <p> Me encantan! la calidad de sonido es excelente, sin embargo, aunque no tarda mucho en cargar su bateria se agota demasiado rapido </p>
-            <p> Rating: 4 estrellas</p>
-            <p> 09/10/2025</p>
-        </article>
-    </section>
-    <section class="Section2 item">
-        <article>
-            <h2>Martin Roca</h2>
-            <p> Buenos auriculares, los uso a diario para trabajar o entrenar. Poseen muy buen sonido y una excelente cancelacion del ruido.</p>
-            <p>Rating: 4 estrellas</p>
-            <p>11/03/2026</p>
-        </article>
-    </section>
-    <Section class="Section3 item">
-        <article>
-            <h2> Eliana Lopez</h2>
-            <p>Hace un mes los adquiri por la pagina princial de Aplee, sin embargo he tenido varios fallos en cuanto a la conexion bluetooth e interferencias en las llamadas</p>
-            <p>Rating: 2 estrellas</p>
-            <p>01/01/2026</p>
-        </article>
-    </Section>
+     <div class="divproduct">
+         <section class="Sectionproduct">
+             <img src="./img/airpods pro.jpeg" alt="Imagen AirPods" class="imgproduct">
+             <h1 class="h1product">Airpods Pro segunda generacion</h1>
+             <p class="descripcion">Auriculares inalámbricos diseñados para ofrecer una cancelación de ruido superior, con funciones de salud auditiva y sensores tactiles</p>
+             <p class="caracteristicas">$199.99</p>
+             <p class="caracteristicas"> Apple</p>
+          </section>
+          <h2 class="Reseñas">Reseñas:</h2>
+           <section class="Section item">
+              <article>
+                 <h2>Juana Rodriguez</h2>
+                 <p> Me encantan! la calidad de sonido es excelente, sin embargo, aunque no tarda mucho en cargar su bateria se agota demasiado rapido </p>
+                 <p class="rating"> Rating: 4 estrellas</p>
+                 <p class="fecha"> 09/10/2025</p>
+               </article>
+          </section>
+          <section class="Section2 item">
+             <article>
+                 <h2>Martin Roca</h2>
+                 <p> Buenos auriculares, los uso a diario para trabajar o entrenar. Poseen muy buen sonido y una excelente cancelacion del ruido.</p>
+                 <p class="rating">Rating: 4 estrellas</p>
+                 <p class="fecha">11/03/2026</p>
+               </article>
+          </section>
+         <Section class="Section3 item">
+               <article>
+                  <h2> Eliana Lopez</h2>
+                 <p>Hace un mes los adquiri por la pagina princial de Aplee, sin embargo he tenido varios fallos en cuanto a la conexion bluetooth e interferencias en las llamadas</p>
+                 <p class="rating">Rating: 2 estrellas</p>
+                 <p class="fecha">01/01/2026</p>
+                </article>
+           </Section>
+       </div>
     </main> 
 </body>
 </html>
