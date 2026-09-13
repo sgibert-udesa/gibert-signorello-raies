@@ -215,3 +215,34 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 }
+.logo{
+    width: 50%;
+}
+.img{
+    display: block;
+    width: 100%;
+
+}
+.category{
+    display: flex;
+    flex-direction: row;
+}
+.category2{
+    display: flex;
+    flex-direction: row;
+}
+.category3{
+    display: flex;
+    flex-direction: row;
+}
+.category4{
+    display: flex;
+    flex-direction: row;
+}
+.category5{
+    display: flex;
+    flex-direction: row;
+}
+.verdetalles {
+    justify-content: center;
+}
