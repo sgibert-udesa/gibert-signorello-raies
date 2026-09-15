@@ -67,6 +67,12 @@ align-content: center;
 .navegador_index li{
     margin-right: 20px;
 }
+.navegador_index li {
+    background-color: lightblue;
+    font-size: 15px;
+    padding: 2px;
+    border: 1px solid white; 
+}
 
 .navegador_index0 {
     display: flex;
@@ -104,16 +110,13 @@ align-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgb(108, 91, 123);
 }
-
 .main_index {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 1024px;
     margin-left: 2px;
-
 }
 
 .aside_index {
@@ -164,13 +167,14 @@ align-content: center;
     border: 1px gray solid;
     margin: 5px;
     height: 380px;
+    background-color: rgb(114, 103, 124)
 
 }
 
 .img_article_index {
     width: 192.5px;
     height: 200px;
-        margin-bottom: 5px;
+     margin-bottom: 5px;
 }
 
 .imgproduct {
@@ -302,8 +306,38 @@ flex-direction: column;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
     flex-direction: column;
+}
+.texto_productos p {
+    margin-top: 5px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(53, 92, 125);
+    width: 1024px;
+    margin-top: 30px;
+    padding: 30px;
+    justify-content: space-around;
+}
+.footer p {
+    color: white;
+    margin-top: 5px;
+}
+.footer a {
+    color: white;
+}
+.footer h2{
+    color: lightblue;
+}
+.footer label {
+    color: white;
+}
+.footer {
+    line-height: 25px;
+}
+.footer input {
+ margin-top: 20px;
 }
 
 
