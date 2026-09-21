@@ -425,3 +425,6 @@ body {
     background-color: lightblue;
     color: blue;
 }
+.productdesc{
+    display: flex;
+}
