@@ -320,8 +320,8 @@ body {
 }
 
 .texto_productos {
-    margin: 0 10px 10px;
-    width: 172.5px;
+    margin: 0 2px 0 2px;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -427,4 +427,25 @@ body {
 }
 .productdesc{
     display: flex;
+}
+
+@media(max-width: 425px) {
+.body{
+    display: flex;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.aside_index{
+    width: 100%;
+}
+.PRODUCTS{
+    width: 100%;
+}
+.article_index{
+ width: 100%;
+}
+
 }
