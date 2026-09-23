@@ -471,5 +471,32 @@ body {
         margin-bottom: 30px;
         margin: 5px;
     }
-
+.navegador_index{
+    justify-content: space-between;
+}
+.navegador_index li {
+    margin: 3px;
+}
+.BARRA_de_busqueda2 {
+    width: 20%
+}
+.buscador_index{
+    width: 60%;
+    margin-left: 10%;
+}
+.footer {
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.main_login {
+    width: 100%;
+}
+.contenedor_login{
+    
+}
 }
