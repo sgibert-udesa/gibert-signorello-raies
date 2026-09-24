@@ -310,13 +310,13 @@ body {
 }
 
 .registro{
-   font-family: Arial, Helvetica, sans-serif;
-   background-color: lightblue;
-   border: 1px solid black;
-   padding: 5px;
+   margin-top: 10px;
+   color: black;
 }
-          
-
+.registro a {
+    color: white;
+    margin-left: 8px;
+}
 .titulo_login {
     text-align: center;
     margin: 0 0 15px 0;
@@ -559,7 +559,5 @@ body {
     width: 100%;
     margin-top: 20px;
 }
-.cuenta{
-    flex-direction: row;
-}
+
 
