@@ -126,6 +126,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
+    display: inline-block; 
 }
 
 .main_index {
@@ -187,8 +188,8 @@ body {
     flex-wrap: wrap;
     width: 20%;
     border: 1px gray solid;
-    margin: 5px;
     height: 390px;
+    margin: 5px;
     justify-content: center;
     background-color: rgb(161, 194, 218);
 }
@@ -346,9 +347,10 @@ body {
     flex-direction: row;
     background-color: rgb(53, 92, 125);
     width: 100%;
-    margin-top: 30px;
     padding: 30px;
+    margin-top: 30px;
     justify-content: space-around;
+   
 }
 
 .footer p {
