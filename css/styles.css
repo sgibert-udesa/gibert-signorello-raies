@@ -296,10 +296,11 @@ body {
 }
 
 .main_login {
-    background-color: #6c5b7b;
+    background-color: rgb(105, 129, 148);
     width: 768px;
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .body_login {
@@ -601,4 +602,13 @@ body {
 }
 .Apple{
    align-self: center;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.tags p {
+    margin-left: 10px;
 }
