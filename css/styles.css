@@ -126,7 +126,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
-    display: inline-block; 
+    display: inline-block;
 }
 
 .main_index {
@@ -257,6 +257,7 @@ body {
     margin-left: 15px;
     margin-top: 15px;
 }
+
 .lista p {
     background-color: #355c7d;
     color: white;
@@ -287,7 +288,7 @@ body {
 
 .descripcion {
     font-size: 20px;
-    margin-left: 15px ;
+    margin-left: 15px;
 }
 
 .email_login {
@@ -309,14 +310,16 @@ body {
     margin: 15px 0 15px 0;
 }
 
-.registro{
-   margin-top: 10px;
-   color: black;
+.registro {
+    margin-top: 10px;
+    color: black;
 }
+
 .registro a {
     color: white;
     margin-left: 8px;
 }
+
 .titulo_login {
     text-align: center;
     margin: 0 0 15px 0;
@@ -352,7 +355,7 @@ body {
     padding: 30px;
     margin-top: 30px;
     justify-content: space-around;
-   
+
 }
 
 .footer p {
@@ -460,14 +463,15 @@ body {
     .aside_index {
         width: 100%;
     }
-    .logo_index{
+
+    .logo_index {
         width: 40%;
     }
 
     .PRODUCTS {
         width: 100%;
     }
-   
+
 
     .article_index {
         width: 100%;
@@ -505,6 +509,7 @@ body {
         height: 80%;
         border: solid black 1px;
     }
+
     .BARRA_de_busqueda2 {
         height: 80%;
     }
@@ -530,34 +535,67 @@ body {
     .email_login {
         width: 100%;
     }
-.mainproduct {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
+
+    .mainproduct {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .divproduct {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .productdesc {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .lista {
+        justify-content: center;
+    }
+
+    .imgproduct {
+        height: 100%;
+        width: 100%;
+    }
+
+    .productdesc {
+        width: 100%;
+    }
+
+    .detalle_del_producto {
+
+        width: 100%;
+    }
+
+    .imgproduct {
+        width: 98%;
+        border: gray solid 1px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .item {
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin: 0 0 5% 0;
+
+    }
 }
-.divproduct {
-    margin-left:0px ;
-}
-.productdesc{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.lista {
-    justify-content: center;
-}
-.imgproduct {
-    height: 100%;
-    width: 100%;
-}
-.productdesc {
-    width: 100%;
-}
-}
+
 .ALEATORIOS {
     text-align: center;
     width: 100%;
     margin-top: 20px;
 }
 
-
+.Suscribirse {
+    border: solid 1px black;
+    color: rgb(1, 59, 110);
+    height: 19px;
+    width: 80px;
+}
