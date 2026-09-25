@@ -20,11 +20,6 @@ li a {
 
 }
 
-.links {
-    color: black;
-    text-decoration: none;
-}
-
 li {
     list-style-type: none;
 }
@@ -601,8 +596,9 @@ body {
     width: 80px;
 }
 .Apple{
-   align-self: center;
+   padding: 8px;
 }
+
 .tags {
     display: flex;
     flex-direction: row;
@@ -611,4 +607,9 @@ body {
 }
 .tags p {
     margin-left: 10px;
+}
+
+.productos1{
+    margin: 10px;
+    margin-left: 15px;
 }
