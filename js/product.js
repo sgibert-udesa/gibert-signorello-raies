@@ -12,6 +12,8 @@ fetch (endpoint)
 })
 .then(function(data){
     console.log(data)
+    
+
 })
 .catch(function(error){
     console.log(`el error es:` + error)
