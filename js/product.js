@@ -26,8 +26,20 @@ fetch (endpoint)
  let reseña= document.querySelector (".Section item")
  let reseña2= document.querySelector (".Section2 item ")
  let reseña3 = document.querySelector (".Section3 item")
- // modifico el contenido 
+ // modifico el contenido, info de la API
  titulo.innerText = data.title
+ descripcion.innerText = data.description
+ apple.innerText=data.price
+ marca.innerText= data.brand
+ stock.innerText= data.stock
+ categoria.innerText=data.category
+ //
+ tag1.innerText=data.tags
+ tag2.innerText=data.tag2
+ tag3.innerText=data.tag3
+ reseña.innerText=data.reseña
+ reseña2.innerText=data.reseña2
+ reseña3.innerText=data.reseña3
 })
 .catch(function(error){
     console.log(`el error es:` + error)
