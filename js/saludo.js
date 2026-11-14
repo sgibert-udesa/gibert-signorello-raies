@@ -11,7 +11,7 @@ let saludo= document.querySelector(".saludo")
 
 // si el formulario se procesa correctamente 
 if (recuperostorage){
-saludo.innerText= "bienvenido" + recuperostorage
+saludo.innerText= "bienvenido " + recuperostorage
 login.style.display= "none" 
 register.style.display= "none"
 }

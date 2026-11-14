@@ -181,13 +181,17 @@ body {
 .article_index {
     display: flex;
     flex-wrap: wrap;
-    width: 20%;
+    width: 32%;
     border: 1px gray solid;
-    height: 390px;
+    height: 450px;
     margin: 5px;
     justify-content: center;
     background-color: rgb(161, 194, 218);
 }
+.DescripcionDelProducto{
+    margin-bottom: 5px;
+}
+
 
 .img_article_index {
     width: 100%;
