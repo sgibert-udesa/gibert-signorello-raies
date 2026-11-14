@@ -212,7 +212,10 @@ body {
     background-color: rgb(13, 83, 117);
     border: 1px solid rgb(141, 187, 219);
 }
-
+.logoutSacar{
+    background: none;
+    border: none;
+}
 .botton_index a {
     color: rgba(235, 220, 201);
     font-weight: bold;
