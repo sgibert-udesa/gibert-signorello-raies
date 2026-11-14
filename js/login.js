@@ -14,6 +14,7 @@ alert (useremail)
     let digcontraseña= "La contraseña debe tener al menos 6 caracteres"
     alert (digcontraseña)
 } else {
+    localStorage.setItem ("email", email.value)
     this.submit()
 }
 })
