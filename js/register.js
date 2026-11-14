@@ -14,23 +14,32 @@ formBuscador.addEventListener("submit", function (e) {
 
 })
 
-let campos = document.querySelectorAll(".email_login");
-let form = document.querySelector(".form_login");
+let form = document.querySelector(".form_login")
+let email = document.querySelector(".email");
+let contraseña = document.querySelector(".contraseña");
+let repetirContraseña = document.querySelector(".repetir");
+
+form.addEventListener ("submit", function (event){
+    event.preventDefault()
 
 if (email.value == "") {
-    alert("El campo de email está vacio");
+    let userEmail = "Campo email vacio";
+    alert(userEmail);
 }
 
 else if (contraseña.value == "") {
-    alert("El campo de contraseña está vacio");
+    let userContraseña = "campo contraseña vacio";
+    alert(userContraseña);
 }
 
 else if (contraseña.value.length < 6) {
-    alert("La contraseña debe tener al menos 6 caracteres");
+    let digContraseña = "La contraseña debe tener al menos 6 caracteres";
+    alert(digContraseña);
 }
-else if (contraseña.value != repetir.value) {
+else if (contraseña.value != repetirContraseña.value) {
     alert("Las contraseñas no coinciden");
 }
 else {
     this.submit()
 }
+})
