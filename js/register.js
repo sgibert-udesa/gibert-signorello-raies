@@ -28,7 +28,7 @@ else if (contraseña.value == "") {
 else if (contraseña.value.length < 6) {
     alert("La contraseña debe tener al menos 6 caracteres");
 }
-else if (contraseña.vaule != repetir.value) {
+else if (contraseña.value != repetir.value) {
     alert("Las contraseñas no coinciden");
 }
 else {
