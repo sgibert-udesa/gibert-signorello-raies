@@ -1,3 +1,4 @@
+// Header  
 let formBuscador = document.querySelector(".BARRA_de_busqueda");
 let campoBuscador = document.querySelector(".buscador_index");
 
@@ -11,7 +12,19 @@ formBuscador.addEventListener("submit", function (e) {
     } else {
         this.submit()
     }
+})
+// footer
+let formSubcripcion = document.querySelector('.formSubcripcion')
+let campoSubcripcion = document.querySelector('.campoSubcripcion')
 
+formSubcripcion.addEventListener("submit", function (e) {
+    e.preventDefault()
+    if (campoSubcripcion.value == '') {
+        alert("El campo de búsqueda está vacio");
+    }
+    else {
+        this.submit()
+    }
 })
 
 
@@ -28,7 +41,7 @@ fetch(endpoint1)
 
         // article
 
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 11; i++) {
             let nombre = productos[i].title
             let imagen = productos[i].images[0]
             let precio = productos[i].price
@@ -65,7 +78,7 @@ fetch(endpoint2)
         // console.log(productos)
 
         // article
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 12; i++) {
             let nombre = productos[i].title
             let imagen = productos[i].images[0]
             let precio = productos[i].price
@@ -112,6 +125,6 @@ fetch(endpoint3)
             <li><a href="./category.html?categoria=${nombre}">${nombre}</a></li>`
         }
     })
-        .catch(function (error) {
+    .catch(function (error) {
         console.log(error);
     })
