@@ -46,9 +46,10 @@ fetch (endpoint)
  let marca = document.querySelector (".marca")
  let stock = document.querySelector (".Stock")
  let categoria = document.querySelector (".categoria")
- let tag1 = document.querySelector (".tag1")
- let tag2 = document.querySelector (".tag2")
- let tag3 = document.querySelector (".tag3")
+ //let tag1 = document.querySelector (".tag1")
+ //let tag2 = document.querySelector (".tag2")
+ //let tag3 = document.querySelector (".tag3")
+ let tags = document.querySelector(".tags")
  let reseña= document.querySelector (".Section item")
  let reseña2= document.querySelector (".Section2 item ")
  let reseña3 = document.querySelector (".Section3 item")
@@ -59,13 +60,12 @@ fetch (endpoint)
  marca.innerText= data.brand
  stock.innerText= data.stock
  categoria.innerText=data.category
- //
- tag1.innerText=data.tags
- tag2.innerText=data.tag2
- tag3.innerText=data.tag3
- reseña.innerText=data.reseña
- reseña2.innerText=data.reseña2
- reseña3.innerText=data.reseña3
+ // recorro arrays
+ tags.innerText= ""
+ for( let i=0; i< data.tags.length; i++) {
+   tags.innerHTML += `<p> ${data.tags[i]} </p>`
+ } 
+ 
 })
 .catch(function(error){
     console.log(`el error es:` + error)
