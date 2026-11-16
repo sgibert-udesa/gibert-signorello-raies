@@ -37,7 +37,7 @@ fetch(endpoint1)
     })
     .then(function (data) {
         let productos = data.products
-        console.log(productos)
+       // console.log(productos)
 
         // article
 
@@ -126,5 +126,5 @@ fetch(endpoint3)
         }
     })
     .catch(function (error) {
-        console.log(error);
+         console.log(error);
     })
