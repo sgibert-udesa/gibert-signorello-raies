@@ -46,13 +46,14 @@ fetch (endpoint)
  let marca = document.querySelector (".marca")
  let stock = document.querySelector (".Stock")
  let categoria = document.querySelector (".categoria")
- //let tag1 = document.querySelector (".tag1")
- //let tag2 = document.querySelector (".tag2")
- //let tag3 = document.querySelector (".tag3")
+ // tags
  let tags = document.querySelector(".tags")
- let reseña= document.querySelector (".Section item")
- let reseña2= document.querySelector (".Section2 item ")
- let reseña3 = document.querySelector (".Section3 item")
+ // reseñas, capturo con all para modificar a todas juntas
+ let nombre = document.querySelectorAll(".nombre")
+ let comentario = document.querySelectorAll(".comentario")
+ let rating = document.querySelectorAll(".rating")
+ let fecha = document.querySelectorAll(".fecha")
+
  // modifico el contenido, info de la API
  titulo.innerText = data.title
  descripcion.innerText = data.description
@@ -65,7 +66,14 @@ fetch (endpoint)
  for( let i=0; i< data.tags.length; i++) {
    tags.innerHTML += `<p> ${data.tags[i]} </p>`
  } 
- 
+
+ // comentarios, con recorrido de arrays [0,1,2]
+ for (let i=0; i< data.reviews.length;i++) {
+    nombre[i].innerText = data.reviews[i].reviewerName
+    comentario [i].innerText = data.reviews [i].comment
+    rating[i].innerText = data.reviews[i].rating
+    fecha [i].innerText = data.reviews [i].date
+}
 })
 .catch(function(error){
     console.log(`el error es:` + error)
