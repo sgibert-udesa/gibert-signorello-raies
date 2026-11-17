@@ -47,6 +47,7 @@ fetch(endpoint)
             let descripcionDelProducto = productos[i].description
             let precioDelProducto = productos[i].price
             let categoria = productos[i].category
+            let id = productos [i].id
 
             let titulo = document.querySelector(".TOP_PRODUCTS")
             titulo.innerText = `${categoria}`
@@ -64,7 +65,7 @@ fetch(endpoint)
                         <p>${precioDelProducto}</p>
                     </div>
                     <div class="detalles1">
-                        <a href="./product.html" class="detalles">Ver detalle</a>
+                        <a href="./product.html?id=${id}" class="detalles">Ver detalle</a>
                     </div>
                 </article>`
         }

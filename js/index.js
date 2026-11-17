@@ -19,6 +19,7 @@ fetch(endpoint1)
             let imagen = productos[i].images[0]
             let precio = productos[i].price
             let descripcion = productos[i].description
+            let id = productos [i].id
 
             let contenedor = document.querySelector('.section_index')
 
@@ -31,7 +32,7 @@ fetch(endpoint1)
                         <p class="precioDelProducto">${precio}</p>
                     </div>
                     <div class="detalles1">
-                        <a href="./product.html" class="detalles">Ver detalle</a>
+                        <a href="./product.html?id=${id}" class="detalles">Ver detalle</a>
                     </div>  
             </article>`
         }
@@ -56,6 +57,7 @@ fetch(endpoint2)
             let imagen = productos[i].images[0]
             let precio = productos[i].price
             let descripcion = productos[i].description
+            let id = productos [i].id
 
             let contenedor = document.querySelector('.section_index.ProductosAlatorios')
 
@@ -67,8 +69,8 @@ fetch(endpoint2)
                         <p class="DescripcionDelProducto">${descripcion}</p>
                         <p class="precioDelProducto">${precio}</p>
                     </div>
-                    <div class="detalles1">
-                        <a href="./product.html" class="detalles">Ver detalle</a>
+                    <div class="detalles1"> 
+                        <a href="./product.html?id=${id}" class="detalles">Ver detalle</a>
                     </div>
                     
             </article>`

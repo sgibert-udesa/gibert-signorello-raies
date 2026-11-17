@@ -55,6 +55,8 @@ fetch (endpoint)
  let fecha = document.querySelectorAll(".fecha")
 
  // modifico el contenido, info de la API
+ img.src= data.thumbnail
+ img.alt = data.title
  titulo.innerText = data.title
  descripcion.innerText = data.description
  apple.innerText=data.price
