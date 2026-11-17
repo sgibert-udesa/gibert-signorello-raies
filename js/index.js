@@ -1,6 +1,3 @@
-
-
-
 // fetch 1 
 let endpoint1 = 'https://dummyjson.com/products/category/smartphones';
 
@@ -97,7 +94,7 @@ fetch(endpoint3)
             let contenedor = document.querySelector('.CATEGORIAS_index')
 
             contenedor.innerHTML += ` 
-            <li><a href="./category.html?categoria=${nombre}">${nombre}</a></li>`
+            <li><a href="./category.html?category=${nombre}">${nombre}</a></li>`
         }
     })
     .catch(function (error) {
