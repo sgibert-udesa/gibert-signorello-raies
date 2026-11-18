@@ -71,9 +71,6 @@ body {
 
 .navegador_index li {
     margin-right: 20px;
-}
-
-.navegador_index li {
     background-color: lightblue;
     font-size: 15px;
     padding: 5px;
@@ -117,11 +114,7 @@ body {
 }
 
 .PRODUCTS {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    display: inline-block;
+   width: 80%;
 }
 
 .main_index {
@@ -183,7 +176,7 @@ body {
     flex-wrap: wrap;
     width: 32%;
     border: 1px gray solid;
-    height: 450px;
+    min-height: 450px;
     margin: 5px;
     justify-content: center;
     background-color: rgb(161, 194, 218);
@@ -204,21 +197,9 @@ body {
     border: 5px solid rgb(192, 108, 132);
 }
 
-.botton_index {
-    margin: 3px auto;
-    height: 40px;
-    align-self: end;
-    width: 100px;
-    background-color: rgb(13, 83, 117);
-    border: 1px solid rgb(141, 187, 219);
-}
 .logoutSacar{
     background: none;
     border: none;
-}
-.botton_index a {
-    color: rgba(235, 220, 201);
-    font-weight: bold;
 }
 
 .item {
@@ -227,6 +208,7 @@ body {
     flex-direction: column;
     background-color: rgb(224, 218, 216);
     padding: 10px;
+    line-height: 25px;
 }
 
 .Section {
@@ -241,10 +223,6 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 28px;
-}
-
-.item {
-    line-height: 25px;
 }
 
 .h1product {
@@ -300,8 +278,10 @@ body {
 .main_login {
     background-color: rgb(105, 129, 148);
     width: 768px;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -358,6 +338,7 @@ body {
     padding: 30px;
     margin-top: 30px;
     justify-content: space-around;
+    line-height: 25px;
 
 }
 
@@ -376,10 +357,6 @@ body {
 
 .footer label {
     color: white;
-}
-
-.footer {
-    line-height: 25px;
 }
 
 .footer input {
@@ -428,22 +405,8 @@ body {
     border: 1px solid black;
 }
 
-.barras {
-    width: 30px;
-}
-
-.email_login {
-    height: 30px;
-    margin-top: 5px;
-}
-
 .terminos {
     margin-right: 5px;
-}
-
-.Suscribirse {
-    background-color: lightblue;
-    color: blue;
 }
 
 .productdesc {
@@ -452,8 +415,44 @@ body {
     align-items: center;
 }
 
+.ALEATORIOS {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Suscribirse {
+    background-color: lightblue;
+    border: solid 1px black;
+    color: rgb(1, 59, 110);
+    height: 19px;
+    width: 80px;
+}
+
+.Apple{
+   padding: 8px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.tags p {
+    margin-left: 10px;
+}
+
+.productos1{
+    margin: 10px;
+    margin-left: 15px;
+}
+.saludo{
+    color: black;
+}
+
 @media(max-width: 425px) {
-    .body {
+    body {
         display: flex;
     }
 
@@ -504,7 +503,7 @@ body {
     }
 
     .BARRA_de_busqueda2 {
-        width: 20%
+        width: 20%;
     }
 
     .buscador_index {
@@ -588,38 +587,4 @@ body {
         margin-right: 1%;
         margin: 0 0 5% 0;
      }
-}
-
-.ALEATORIOS {
-    text-align: center;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.Suscribirse {
-    border: solid 1px black;
-    color: rgb(1, 59, 110);
-    height: 19px;
-    width: 80px;
-}
-.Apple{
-   padding: 8px;
-}
-
-.tags {
-    display: flex;
-    flex-direction: row;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.tags p {
-    margin-left: 10px;
-}
-
-.productos1{
-    margin: 10px;
-    margin-left: 15px;
-}
-.saludo{
-    color: black;
 }
