@@ -44,7 +44,7 @@ let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString);
 let categoria = queryStringObj.get("category");
 
-console.log(categoria)
+ console.log(categoria)
 let endpoint = `https://dummyjson.com/products/category/${categoria}`;
 
 fetch(endpoint)
