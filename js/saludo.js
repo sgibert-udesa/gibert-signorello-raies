@@ -13,20 +13,20 @@ formSubcripcion.addEventListener("submit", function (e) {
     }
 })
 // capturo elementos 
-let loginli= document.querySelector (".loginli")
-let registerli = document.querySelector (".registerli")
+let loginli = document.querySelector(".loginli")
+let registerli = document.querySelector(".registerli")
 
 // busco los datos 
 let recuperostorage = localStorage.getItem("email")
 
 //cambios 
 // capturo elemento 
-let saludo= document.querySelector(".saludo")
+let saludo = document.querySelector(".saludo")
 
 // si el formulario se procesa correctamente 
-if (recuperostorage){
-saludo.innerText= "bienvenido " + recuperostorage 
-loginli.style.display= "none" 
-registerli.style.display= "none"
+if (recuperostorage) {
+    saludo.innerText = "bienvenido " + recuperostorage
+    loginli.style.display = "none"
+    registerli.style.display = "none"
 }
 

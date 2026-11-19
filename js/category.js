@@ -44,7 +44,7 @@ let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString);
 let categoria = queryStringObj.get("category");
 
- console.log(categoria)
+console.log(categoria)
 let endpoint = `https://dummyjson.com/products/category/${categoria}`;
 
 fetch(endpoint)
@@ -52,7 +52,7 @@ fetch(endpoint)
         return response.json()
     })
     .then(function (data) {
-         // console.log(data)
+        // console.log(data)
         let productos = data.products
 
         console.log(productos)
@@ -63,7 +63,7 @@ fetch(endpoint)
             let descripcionDelProducto = productos[i].description
             let precioDelProducto = productos[i].price
             let categoria = productos[i].category
-            let id = productos [i].id
+            let id = productos[i].id
 
             let titulo = document.querySelector(".TOP_PRODUCTS")
             titulo.innerText = `${categoria}`

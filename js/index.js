@@ -23,7 +23,7 @@ fetch(endpoint1)
     })
     .then(function (data) {
         let productos = data.products
-       // console.log(productos)
+        // console.log(productos)
 
         // article
 
@@ -32,7 +32,7 @@ fetch(endpoint1)
             let imagen = productos[i].images[0]
             let precio = productos[i].price
             let descripcion = productos[i].description
-            let id = productos [i].id
+            let id = productos[i].id
 
             let contenedor = document.querySelector('.section_index')
 
@@ -70,7 +70,7 @@ fetch(endpoint2)
             let imagen = productos[i].images[0]
             let precio = productos[i].price
             let descripcion = productos[i].description
-            let id = productos [i].id
+            let id = productos[i].id
 
             let contenedor = document.querySelector('.section_index.ProductosAlatorios')
 
@@ -114,5 +114,5 @@ fetch(endpoint3)
         }
     })
     .catch(function (error) {
-         console.log(error);
+        console.log(error);
     })

@@ -20,63 +20,63 @@ fetch(endpoint3)
         }
     })
     .catch(function (error) {
-         console.log(error);
+        console.log(error);
     })
 
-    
-let endpointoriginal= 'https://dummyjson.com/products/1'
 
-let queryString=location.search
-let querystringObj=new URLSearchParams(queryString)
+let endpointoriginal = 'https://dummyjson.com/products/1'
+
+let queryString = location.search
+let querystringObj = new URLSearchParams(queryString)
 let id = querystringObj.get(`id`)
 
-let endpoint= `https://dummyjson.com/products/${id}`
+let endpoint = `https://dummyjson.com/products/${id}`
 
-fetch (endpoint)
-.then(function(response){
-    return response.json()
-})
-.then(function(data){
-    console.log(data)
-    // capturo los elementos 
- let img = document.querySelector(".imgproduct")
- let titulo = document.querySelector (".h1product")
- let descripcion= document.querySelector(".descripcion")
- let apple = document.querySelector (".Apple")
- let marca = document.querySelector (".marca")
- let stock = document.querySelector (".Stock")
- let categoria = document.querySelector (".categoria")
- // tags
- let tags = document.querySelector(".tags")
- // reseñas, capturo con all para modificar a todas juntas
- let nombre = document.querySelectorAll(".nombre")
- let comentario = document.querySelectorAll(".comentario")
- let rating = document.querySelectorAll(".rating")
- let fecha = document.querySelectorAll(".fecha")
+fetch(endpoint)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log(data)
+        // capturo los elementos 
+        let img = document.querySelector(".imgproduct")
+        let titulo = document.querySelector(".h1product")
+        let descripcion = document.querySelector(".descripcion")
+        let apple = document.querySelector(".Apple")
+        let marca = document.querySelector(".marca")
+        let stock = document.querySelector(".Stock")
+        let categoria = document.querySelector(".categoria")
+        // tags
+        let tags = document.querySelector(".tags")
+        // reseñas, capturo con all para modificar a todas juntas
+        let nombre = document.querySelectorAll(".nombre")
+        let comentario = document.querySelectorAll(".comentario")
+        let rating = document.querySelectorAll(".rating")
+        let fecha = document.querySelectorAll(".fecha")
 
- // modifico el contenido, info de la API
- img.src= data.thumbnail
- img.alt = data.title
- titulo.innerText = data.title
- descripcion.innerText = data.description
- apple.innerText=data.price
- marca.innerText= data.brand
- stock.innerText= data.stock
- categoria.innerText=data.category
- // recorro arrays
- tags.innerText= ""
- for( let i=0; i< data.tags.length; i++) {
-   tags.innerHTML += `<p> ${data.tags[i]} </p>`
- } 
+        // modifico el contenido, info de la API
+        img.src = data.thumbnail
+        img.alt = data.title
+        titulo.innerText = data.title
+        descripcion.innerText = data.description
+        apple.innerText = data.price
+        marca.innerText = data.brand
+        stock.innerText = data.stock
+        categoria.innerText = data.category
+        // recorro arrays
+        tags.innerText = ""
+        for (let i = 0; i < data.tags.length; i++) {
+            tags.innerHTML += `<p> ${data.tags[i]} </p>`
+        }
 
- // comentarios, con recorrido de arrays [0,1,2]
- for (let i=0; i< data.reviews.length;i++) {
-    nombre[i].innerText = data.reviews[i].reviewerName
-    comentario [i].innerText = data.reviews [i].comment
-    rating[i].innerText = data.reviews[i].rating
-    fecha [i].innerText = data.reviews [i].date
-}
-})
-.catch(function(error){
-    console.log(`el error es:` + error)
-})
+        // comentarios, con recorrido de arrays [0,1,2]
+        for (let i = 0; i < data.reviews.length; i++) {
+            nombre[i].innerText = data.reviews[i].reviewerName
+            comentario[i].innerText = data.reviews[i].comment
+            rating[i].innerText = data.reviews[i].rating
+            fecha[i].innerText = data.reviews[i].date
+        }
+    })
+    .catch(function (error) {
+        console.log(`el error es:` + error)
+    })

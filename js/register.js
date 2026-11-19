@@ -19,27 +19,27 @@ let email = document.querySelector(".email");
 let contraseña = document.querySelector(".contraseña");
 let repetirContraseña = document.querySelector(".repetir");
 
-form.addEventListener ("submit", function (event){
+form.addEventListener("submit", function (event) {
     event.preventDefault()
 
-if (email.value == "") {
-    let userEmail = "Campo email vacio";
-    alert(userEmail);
-}
+    if (email.value == "") {
+        let userEmail = "Campo email vacio";
+        alert(userEmail);
+    }
 
-else if (contraseña.value == "") {
-    let userContraseña = "campo contraseña vacio";
-    alert(userContraseña);
-}
+    else if (contraseña.value == "") {
+        let userContraseña = "campo contraseña vacio";
+        alert(userContraseña);
+    }
 
-else if (contraseña.value.length < 6) {
-    let digContraseña = "La contraseña debe tener al menos 6 caracteres";
-    alert(digContraseña);
-}
-else if (contraseña.value != repetirContraseña.value) {
-    alert("Las contraseñas no coinciden");
-}
-else {
-    this.submit()
-}
+    else if (contraseña.value.length < 6) {
+        let digContraseña = "La contraseña debe tener al menos 6 caracteres";
+        alert(digContraseña);
+    }
+    else if (contraseña.value != repetirContraseña.value) {
+        alert("Las contraseñas no coinciden");
+    }
+    else {
+        this.submit()
+    }
 })

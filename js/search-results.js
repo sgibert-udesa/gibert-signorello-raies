@@ -56,7 +56,7 @@ fetch(endpointBuscador)
     .then(function (data) {
         // console.log(data)
         let productoBuscado = data.products
-       // console.log(productoBuscado)
+        // console.log(productoBuscado)
         if (productoBuscado.length === 0) {
             alert("No hay resultados para el término: " + productoDelBuscado)
             let elTérminoPuestoEnElBuscador = document.querySelector('.TOP_PRODUCTS')
