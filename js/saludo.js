@@ -29,3 +29,4 @@ saludo.innerText= "bienvenido " + recuperostorage
 loginli.style.display= "none" 
 registerli.style.display= "none"
 }
+

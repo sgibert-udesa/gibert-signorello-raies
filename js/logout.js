@@ -13,7 +13,6 @@ logout.addEventListener('click', function () {
     logoutLi.style.display = 'none'
 
 
-
     login.style.display = "block"
     register.style.display = 'block'
 

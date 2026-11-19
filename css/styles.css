@@ -588,3 +588,12 @@ body {
         margin: 0 0 5% 0;
      }
 }
+.email_login{
+    padding: 5px;
+    height: 30px;
+    margin-top: 5px;
+}
+.loginCampo{
+    display: block;
+    margin-bottom: 2px;
+}
