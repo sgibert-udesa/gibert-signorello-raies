@@ -6,7 +6,7 @@ let campoSubcripcion = document.querySelector('.campoSubcripcion')
 formSubcripcion.addEventListener("submit", function (e) {
     e.preventDefault()
     if (campoSubcripcion.value == '') {
-        alert("El campo de búsqueda está vacio");
+        alert("El campo de email está vacio");
     }
     else {
         this.submit()
