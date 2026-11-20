@@ -338,7 +338,7 @@ body {
     background-color: rgb(53, 92, 125);
     width: 100%;
     padding: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     justify-content: space-around;
     line-height: 25px;
 
@@ -598,4 +598,7 @@ body {
 .loginCampo{
     display: block;
     margin-bottom: 2px;
+}
+.tag1{
+color: black;
 }

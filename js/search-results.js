@@ -44,7 +44,7 @@ fetch(endpoint3)
 
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
-let productoDelBuscado = queryStringObj.get("buscardor")
+let productoDelBuscado = queryStringObj.get("buscador")
 // console.log(productoDelBuscado)
 
 

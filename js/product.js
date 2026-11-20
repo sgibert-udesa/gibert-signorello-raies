@@ -82,7 +82,16 @@ fetch(endpoint)
         // recorro arrays
         tags.innerText = ""
         for (let i = 0; i < data.tags.length && i < 3; i++) {
-            tags.innerHTML += `<p> ${data.tags[i]} </p>`
+            if(i == 0){
+                tags.innerHTML += `
+            <p><a href="./category.html?category=${data.category}" class="tag1">${data.tags[i]}</a></p>
+        `
+            }
+            else {
+                  tags.innerHTML += `
+            <p class="tag2">${data.tags[i]}</p>
+        `
+            }
         }
 
         // comentarios, con recorrido de arrays [0,1,2]

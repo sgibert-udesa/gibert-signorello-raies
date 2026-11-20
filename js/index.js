@@ -6,6 +6,7 @@ formBuscador.addEventListener("submit", function (e) {
     e.preventDefault()
 
     if (campoBuscador.value == "") {
+        let alertaDeBusqueda = document.querySelector(".alertaDeBusqueda")
         alert("El campo de búsqueda está vacio");
     } else if (campoBuscador.value.length < 3) {
         alert("El término buscado debe tener al menos 3 caracteres ");
