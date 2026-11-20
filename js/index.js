@@ -38,7 +38,7 @@ fetch(endpoint1)
 
             contenedor.innerHTML += `
             <article class="article_index">
-                    <img src='${imagen}' alt="" class="img_article_index">
+                    <img src='${imagen}' alt="${nombre}" class="img_article_index">
                     <div class="texto_productos">
                         <h2 class="nombreDelProducto">${nombre}</h2>
                         <p class="DescripcionDelProducto">${descripcion}</p>
@@ -76,7 +76,7 @@ fetch(endpoint2)
 
             contenedor.innerHTML += `
             <article class="article_index">
-                    <img src='${imagen}' alt="" class="img_article_index">
+                    <img src='${imagen}' alt="${nombre}" class="img_article_index">
                     <div class="texto_productos">
                         <h2 class="nombreDelProducto">${nombre}</h2>
                         <p class="DescripcionDelProducto">${descripcion}</p>
