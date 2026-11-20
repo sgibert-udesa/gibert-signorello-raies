@@ -75,21 +75,21 @@ fetch(endpoint)
         img.alt = data.title
         titulo.innerText = data.title
         descripcion.innerText = data.description
-        apple.innerText = data.price
+        apple.innerText =`$ ${data.price}`
         marca.innerText = data.brand
-        stock.innerText = data.stock
+        stock.innerText =`Stock: ${data.stock}`
         categoria.innerText = data.category
         // recorro arrays
         tags.innerText = ""
         for (let i = 0; i < data.tags.length && i < 3; i++) {
             if(i == 0){
                 tags.innerHTML += `
-            <p><a href="./category.html?category=${data.category}" class="tag1">${data.tags[i]}</a></p>
+            <p><a href="./category.html?category=${data.category}" class="tag1">#${data.tags[i]}</a></p>
         `
             }
             else {
                   tags.innerHTML += `
-            <p class="tag2">${data.tags[i]}</p>
+            <p class="tag2">#${data.tags[i]}</p>
         `
             }
         }
